@@ -1,0 +1,30 @@
+{
+  "name": "nikitas-link",
+  "version": "1.0.0",
+  "description": "my_personal_website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikita-skobov/nikitas-link.git"
+  },
+  "author": "Nikita Skobov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikita-skobov/nikitas-link/issues"
+  },
+  "homepage": "https://github.com/nikita-skobov/nikitas-link#readme",
+  "devDependencies": {
+    "cross-env": "^6.0.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "react": "^16.10.2",
+    "react-app-polyfill": "^1.0.4",
+    "react-dom": "^16.10.2",
+    "react-scripts": "^3.2.0",
+    "reactstrap": "^8.0.1"
+  }
+}
