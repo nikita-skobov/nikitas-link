@@ -4,6 +4,11 @@ import {
     replaceNewlinesWithBreaks,
 } from './utils'
 
+import {
+    ABOUT,
+    STATUS,
+} from './constants'
+
 import TerminalInput from './components/TerminalInput'
 
 
@@ -31,7 +36,11 @@ const initialTerminalHistory = [
     <div>
         {htmlFriendlyWelcome}
     </div>,
-    <TerminalInput command="dsadsadsadsa" />,
+    <TerminalInput command="cat about_me.txt" />,
+    <div>
+        {replaceNewlinesWithBreaks(ABOUT)}
+        {STATUS.reduce((p, c) => `${p}\n${c}`)}
+    </div>
 ]
 
 export default initialTerminalHistory
