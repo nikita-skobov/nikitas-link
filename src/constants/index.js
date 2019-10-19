@@ -1,6 +1,5 @@
 export const NAME = 'Nikita Skobov'
-export const ABOUT = `Hello World!
-
+export const ABOUT = `
 My name is Nikita Skobov. I like to make things. I am currently:`
 export const STATUS = [
     '   - Studying Computer Science and Statistics at the University of Minnesota',
