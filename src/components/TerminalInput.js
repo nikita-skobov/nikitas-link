@@ -27,7 +27,7 @@ export function TerminalInput(props) {
             <span style={userStyle}>
                 [{user}@{machine} <span style={dirStyle}>{dir}</span>]$
             </span>
-            {command}
+            <span> </span>{command}
         </div>
     )
 }
