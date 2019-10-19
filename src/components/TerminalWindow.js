@@ -8,8 +8,12 @@ import TerminalMenu from './TerminalMenu'
 export function TerminalWindow(props) {
     return (
         <div className="terminal-window terminal-window-color">
-            <TerminalMenu />
-            <Terminal />
+            <div style={{ width: '100%', height: '15%'}}>
+                <TerminalMenu />
+            </div>
+            <div style={{ width: '100%', height: '85%'}}>
+                <Terminal />
+            </div>
         </div>
     )
 }
