@@ -9,4 +9,6 @@
     color: #18cca8;
     font-family: monospace, monospace;
     white-space: pre;
+    font-size: 16px;
+    word-wrap: break-word;
 }
