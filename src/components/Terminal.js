@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import './Terminal.css'
+import TerminalInput from './TerminalInput'
 
 
 export function Terminal(props) {
@@ -12,6 +13,7 @@ export function Terminal(props) {
     return (
         <div className="terminal">
             {terminalHistory}
+            <TerminalInput command="" type="dynamic" />
         </div>
     )
 }

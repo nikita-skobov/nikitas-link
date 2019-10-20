@@ -1,8 +1,9 @@
 import React from 'react'
 
+import TerminalInputDynamic from './TerminalInputDynamic'
 
 export function TerminalInput(props) {
-    // can be static, or input.
+    // can be static, or dynamic.
     // static is just a previous input that has been entered.
     const {
         type = 'static',
@@ -14,9 +15,6 @@ export function TerminalInput(props) {
         dir = '~',
     } = props
 
-    if (type === 'input') {
-        return <div>Havent made input yet oops.</div>
-    }
 
     const userStyle = { color: userColor }
     const dirStyle = { color: dirColor }
@@ -27,7 +25,8 @@ export function TerminalInput(props) {
             <span style={userStyle}>
                 [{user}@{machine} <span style={dirStyle}>{dir}</span>]$
             </span>
-            <span> </span>{command}
+            <span> </span>
+            {type === 'dynamic' ? <TerminalInputDynamic /> : command}
         </div>
     )
 }
