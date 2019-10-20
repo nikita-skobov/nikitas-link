@@ -1,11 +1,11 @@
 import React from 'react'
 
-import About from './About'
+import TerminalWindow from './TerminalWindow'
 
 export function App(props) {
     return (
-        <div>
-            <About />
+        <div className="h-100">
+            <TerminalWindow />
         </div>
     )
 }

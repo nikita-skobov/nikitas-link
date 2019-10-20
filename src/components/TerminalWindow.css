@@ -1,0 +1,45 @@
+.terminal-window {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+}
+
+.terminal-window-bounds {
+    height: 95%;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+
+.terminal-window-color {
+    background-color: #2b3235;
+}
+
+.terminal-window-menu {
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+}
+
+.menu-padding {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.menu-button:hover {
+    background-color: rgb(57, 172, 218);
+    cursor: default;
+}
+
+.window-shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+}
