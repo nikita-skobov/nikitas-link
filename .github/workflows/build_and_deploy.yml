@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - production
+    paths:
+      - 'src/**'
+      - 'public/**'
+
 
 jobs:
   build:
