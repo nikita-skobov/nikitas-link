@@ -7,7 +7,7 @@ import { Provider } from 'react-redux'
 
 import './index.css'
 import App from './components/App'
-import { createEnhancers, setupStore } from './setupStore'
+import { setupStore } from './setupStore'
 
 const store = setupStore()
 
