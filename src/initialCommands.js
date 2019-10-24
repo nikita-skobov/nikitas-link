@@ -9,6 +9,7 @@ import {
     ABOUT,
     STATUS,
     MY_LINKS,
+    TODO,
 } from './constants'
 
 import TerminalInput from './components/TerminalInput'
@@ -59,6 +60,10 @@ const initialTerminalHistory = [
     <TerminalInput command="cat my_links.txt" />,
     <div>
         {MY_LINKS.map((str) => replaceLinksWithAnchors(str, 'm-0'))}
+    </div>,
+    <TerminalInput command="cat todo.txt" />,
+    <div>
+        {TODO.reduce((p, c) => `${p}\n${c}`)}
     </div>
 ]
 
