@@ -2,11 +2,13 @@ import React from 'react'
 
 import {
     replaceNewlinesWithBreaks,
+    replaceLinksWithAnchors,
 } from './utils'
 
 import {
     ABOUT,
     STATUS,
+    MY_LINKS,
 } from './constants'
 
 import TerminalInput from './components/TerminalInput'
@@ -39,6 +41,11 @@ if (window.innerWidth < welcomeWidth) {
     htmlFriendlyWelcome = 'Hello World!'
 }
 
+console.log(MY_LINKS)
+MY_LINKS.forEach((link) => {
+    console.log(replaceLinksWithAnchors(link))
+})
+
 const initialTerminalHistory = [
     <TerminalInput command="./hello_world.sh" />,
     <div>
@@ -48,6 +55,10 @@ const initialTerminalHistory = [
     <div>
         {replaceNewlinesWithBreaks(ABOUT)}
         {STATUS.reduce((p, c) => `${p}\n${c}`)}
+    </div>,
+    <TerminalInput command="cat my_links.txt" />,
+    <div>
+        {MY_LINKS.map((str) => replaceLinksWithAnchors(str, 'm-0'))}
     </div>
 ]
 
