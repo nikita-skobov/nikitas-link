@@ -5,6 +5,7 @@ export const STATUS = [
     '   - Studying Computer Science and Statistics at the University of Minnesota',
     '   - Working on text-steg',
     '   - Working on nikitas-link',
+    '   - Working on my-monorepo',
 ]
 
 export const MY_LINKS = [
