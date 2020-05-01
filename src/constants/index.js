@@ -3,9 +3,9 @@ export const ABOUT = `
 My name is Nikita Skobov. I like to make things. I am currently:`
 export const STATUS = [
     '   - Studying Computer Science and Statistics at the University of Minnesota',
-    '   - Working on text-steg',
+    '   - Working on bash-source-combine',
+    '   - Working on my_blog',
     '   - Working on nikitas-link',
-    '   - Working on my-monorepo',
 ]
 
 export const MY_LINKS = [
