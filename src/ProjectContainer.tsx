@@ -34,6 +34,7 @@ function ProjectContainer() {
     return (
     <div className="project-container">
         <h1>Highlights</h1>
+        <p>Here is a collection of things I've worked on that I'm proud of, or otherwise things that I think are pretty cool :)</p>
         <br />
         {rows}
     </div>
