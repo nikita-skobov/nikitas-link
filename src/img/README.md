@@ -1,0 +1,1 @@
+sorry I dont want to commit the images/gifs. They only exist on my local build, but afterwards they are pushed to my website, so you can find them there if you wish. Otherwise, if you are interested in modifying this repository, you can put your own images here and reference them in the `src/projects.tsx` module
