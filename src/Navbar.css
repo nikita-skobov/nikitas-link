@@ -17,6 +17,10 @@ text-decoration: none;
 font-weight: 700;
 }
 
+header > a:hover {
+    opacity: 0.7;
+}
+
 @media all and (max-width:950px) {
 header a {
     font-size: 1.1em;
@@ -25,4 +29,8 @@ header a {
 
 nav > a {
 margin-left: 1em;
+}
+
+nav > a:hover {
+    opacity: 0.7;
 }
