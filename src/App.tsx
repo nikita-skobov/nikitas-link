@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Jumbo from './Jumbo'
+import ProjectContainer from './ProjectContainer'
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Jumbo />
+      <ProjectContainer />
     </div>
   )
 }
