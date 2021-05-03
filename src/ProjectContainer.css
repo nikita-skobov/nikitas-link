@@ -38,6 +38,7 @@
 
 .cardtext {
     padding-bottom: 1em;
+    font-size: 1.2em;
 }
 
 .cardtitle {
@@ -45,4 +46,18 @@
     font-size: 1.5em;
     padding-bottom: 1em;
     padding-top: 1em;
+}
+
+.card * {
+    font-family: sans-serif;
+}
+
+.cardtext, .cardtitle {
+    max-width: 40vw;
+}
+
+@media screen and (max-width: 600px) {
+    .cardtext, .cardtitle {
+        max-width: 95vw;
+    }
 }
