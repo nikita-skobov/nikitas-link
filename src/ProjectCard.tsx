@@ -6,9 +6,10 @@ function ProjectCard(props: any) {
     card_img,
     card_text,
     card_title,
+    card_link,
   } = card_data
   return (
-    <a className="col card" href="#">
+    <a className="col card" href={card_link}>
         <img className="cardimg" src={card_img} />
         <div className="cardtitle">{card_title}</div>
         <div className="cardtext">{card_text}</div>
