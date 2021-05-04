@@ -2,14 +2,16 @@
 
 > My personal website: https://nikitas.link
 
-![preview](.github/homepage.png?raw=true "preview")
+In 2021 I decided to rewrite my personal website/landing page.
+It was written in react (still is), but it had an unnecessary amount of javascript, and I think a simple landing page of static content shouldn't need any javascript.
+
+However, I still like react, so I rewrote it in a slightly more modern way (I used [vite](https://vitejs.dev/)) and I created a configuration such that it can be rendered to just html/css and then deployed without any javascript.
 
 
-For my personal homepage, I thought it would be fun to make it in a style of a terminal window. I made this website using React, and Redux, and using some basic bootstrap styling. It also uses [Iconic Fonts](https://useiconic.com/open/) fonts (the licenses are located in `public/open-iconic`). It simply displays a terminal-type window with some static output. In the future I would like to add:
+It used to look like this:
 
-- make the window resizable/draggable
-- make the buttons work (minimize, maxmimize, close, file, edit, etc)
-- make a partial terminal emulator that allows users to enter basic commands
-- add a desktop environment with draggable files
-- add a task bar panel with icons that link to some of my projects
+![old_img](https://github.com/nikita-skobov/nikitas-link/blob/0962fba283729e7005fcf5c3dfa345938cb8e299/.github/homepage.png?raw=true)
 
+Now it looks like this:
+
+[nikitas.link](https://nikitas.link)

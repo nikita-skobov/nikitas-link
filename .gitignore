@@ -1,3 +1,9 @@
 node_modules
-.serverless
-build
+.DS_Store
+dist
+dist-ssr
+*.local
+
+src/img/*.gif
+src/img/*.svg
+src/img/*.png

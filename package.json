@@ -1,45 +1,23 @@
 {
-  "name": "nikitas-link",
-  "version": "1.0.0",
-  "description": "my_personal_website",
-  "main": "index.js",
+  "name": "nikitas-link2",
+  "version": "0.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "react-scripts start",
-    "build": "cross-env GENERATE_SOURCEMAP=false PUBLIC_URL='/' react-scripts build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nikita-skobov/nikitas-link.git"
-  },
-  "author": "Nikita Skobov",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nikita-skobov/nikitas-link/issues"
-  },
-  "homepage": "https://github.com/nikita-skobov/nikitas-link#readme",
-  "devDependencies": {
-    "cross-env": "^6.0.3"
+    "dev": "vite",
+    "build:client": "vite build --outDir dist/client",
+    "build:ssr": "vite build --ssr src/main-ssr.tsx --outDir dist/server",
+    "build": "tsc && npm run build:client && npm run build:ssr",
+    "generate": "tsc && vite build --outDir dist/static && npm run build:ssr && node prerender && node strip-ssr",
+    "serve": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "react": "^16.10.2",
-    "react-app-polyfill": "^1.0.4",
-    "react-dom": "^16.10.2",
-    "react-redux": "^7.1.1",
-    "react-scripts": "^3.2.0",
-    "redux": "^4.0.4"
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@vitejs/plugin-react-refresh": "^1.3.1",
+    "typescript": "^4.1.2",
+    "vite": "^2.2.3"
   }
 }
